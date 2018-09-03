@@ -21,7 +21,17 @@
 ## Git
 - One commit, one purpose
 - Commit messages should be short (<40 chars) and succinct
-- Commit messages should start be a sentence (start with a capital and end with a period)
+- Commit messages should be a sentence (start with a capital and end with a period)
 - Commit messages should be describe what you did in past-tense: `Fixed promise rejection in save().`
 - If you need more room for the message, use multiple `-m` options:
 `git ci -m "First message." -m "Second message."`
+
+## Github Workflow
+- Always use a topic branch off of master (`git co -b my-feature`)
+- Commit your work on that topic branch
+- Once complete, add a pull request from Github
+- Only the project maintainer will merge the branch
+- The project maintainer will bump the version
+- The project maintainer will delete the topic branch afterwards
+
+![Github Workflow](https://user-images.githubusercontent.com/15058464/44993870-bea56900-af61-11e8-9ec4-1feb7a32efd1.png)
